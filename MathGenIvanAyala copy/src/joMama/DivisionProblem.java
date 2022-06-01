@@ -1,10 +1,13 @@
 package joMama;
 
+// This is a child class of MathProblem that focuses on Division Problems.
 public class DivisionProblem extends MathProblem{
     private double FirstNum;
     private double SecondNum;
     private double answer;
 
+    // Because the two numbers used for the math problem are randomly generated, I had to make the method find which number was larger than the
+    // other in order to ensure that our answers are not less than 1 and do not equal to undefined.
     public DivisionProblem(int num) {
         setQuestNum(num);
         FirstNum = getFirstNum() * 1.00;
