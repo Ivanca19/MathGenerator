@@ -2,6 +2,7 @@ package joMama;
 
 import java.util.ArrayList;
 
+// This class creates the View that the user will see and adds every problem to the board.
 public class View {
 
     private String map;
