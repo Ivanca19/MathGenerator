@@ -12,6 +12,7 @@ import java.util.logging.Logger;
 import javafx.print.Printer;
 import javax.swing.JTextArea;
 
+// The Overseer class oversees the interactions between the math problems, view and User. Combining the three to manage a program.
 public class Overseer {
     private int numQuestions;
     private int numCorrect;
@@ -36,6 +37,7 @@ public class Overseer {
         probs = new ArrayList<MathProblem>();
     }
 
+    // The menu is the display that the user will interact with. It will return true as long as the user does not terminate the program.
     public boolean menu() throws InterruptedException {
         String[] options = {"Exit", "Test", "Practice Questions", "Print"};
         String[] questTypes = {"Division", "Multiplication", "Subtraction", "Addition"};
@@ -145,8 +147,8 @@ public class Overseer {
         }
         else if(armoredTitan == 3) {
 
-            int hoes = opt(printOpt, map.drawView(), "Ayala Math Generator");
-            if (hoes == 0) {
+            int funny = opt(printOpt, map.drawView(), "Ayala Math Generator");
+            if (funny == 0) {
                 map.clearView();
                 numCorrect = 0;
                 numIncorrect = 0;
@@ -185,7 +187,7 @@ public class Overseer {
                     Logger.getLogger(Overseer.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
-            else if (hoes == 1) {
+            else if (funny == 1) {
                 map.clearView();
                 numCorrect = 0;
                 numIncorrect = 0;
