@@ -1,5 +1,7 @@
 package joMama;
 
+// This is a cool Program and it is the one I am most proud of. This is a Parent class called MathProblem.
+// It defines what the components are in a math problem.
 public class MathProblem {
     private int firstNum;
     private int secondNum;
@@ -53,6 +55,7 @@ public class MathProblem {
         secondNum = (int) (Math.random() * (1001 - firstNum));
     }
 
+    // This method returns a boolean if the imputted answer matches the problem's correct answer.
     public boolean correct() {
         if(imp == answer)
             return true;
