@@ -1,5 +1,6 @@
 package joMama;
 
+// This is a child class of MathProblem that focuses on Multiplication Problems.
 public class MultiplicationProblem extends MathProblem{
     private double FirstNum;
     private double SecondNum;
